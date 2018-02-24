@@ -1,0 +1,18 @@
+.App {
+  height:100%;
+  width:100%;
+   position: absolute;
+}
+.container{
+  position: absolute;
+  top:20%;
+  left:10%;
+}
+
+.description {
+  border:1px solid black;
+
+}
+input:focus{
+  border:2px solid teal !important;
+}
