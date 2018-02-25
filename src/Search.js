@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react'
 import './App.css';
 import _ from 'lodash'
@@ -116,15 +117,3 @@ export default class SearchBar extends Component {
         )
     }
 }
-
-/*
-
-Battery <Progress indicating  value={this.state.battery} total='10' progress='ratio' ></Progress>
-> 2 years Life <Progress indicating  value={this.state.weight} total='10' progress='ratio' ></Progress>
-Memory<Progress indicating percent={1} progress  ></Progress>
-Storage<Progress indicating  value='8' total='10' progress='ratio' ></Progress>
-Screen Size<Progress indicating  value='9' total='10' progress='ratio' ></Progress>
-Rating<Progress indicating  value='8' total='10' progress='ratio' ></Progress>
-Rating<Progress indicating  value='8' total='10' progress='ratio' ></Progress>
-Rating<Progress indicating  value='8' total='10' progress='ratio' ></Progress>
-*/

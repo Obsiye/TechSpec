@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import './App.css';
@@ -11,6 +12,7 @@ export default class ProgressBar extends Component {
             </div>
         )
     }
+
 }
 
 ProgressBar.propTypes = {
