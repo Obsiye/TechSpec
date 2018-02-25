@@ -1,111 +1,152 @@
-[{
-  "name": "Nexus 6P",
-  "make": "Make of phone",
-  "stats": {
-    "battery": 9,
-    "weight": 4
-},
-  "advantages": ["High quality for relatively low price"],
-  "disadvantages": ["Battery significantly worse after 2 years"],
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Nexus_6P.png"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "Samsung S8",
-"make": "Samsung",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["The best"],
-"disadvantages": ["It's really expensive"],
-"image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-},
-{
-"name": "One Plus 5",
-"make": "One Plus",
-"stats": {
-  "battery": 8,
-  "weight": 5
-},
-"advantages": ["Affordable quality"],
-"disadvantages": ["No new features"],
-"image": "https://gloimg.gbtcdn.com/gb/pdm-product-pic/Electronic/2017/08/28/goods-img/1503856982981923822.jpg"
-}
+[
+  {
+    "name": "Nexus 6P",
+    "make": "Make of phone",
+    "stats": {
+      "battery": 9,
+      "weight": 4
+    },
+    "advantages": [
+      "High quality for relatively low price"
+    ],
+    "disadvantages": [
+      "Battery significantly worse after 2 years"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Nexus_6P.png"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "Samsung S8",
+    "make": "Samsung",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "The best"
+    ],
+    "disadvantages": [
+      "It's really expensive"
+    ],
+    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
+  },
+  {
+    "name": "One Plus 5",
+    "make": "One Plus",
+    "stats": {
+      "battery": 8,
+      "weight": 5
+    },
+    "advantages": [
+      "Affordable quality"
+    ],
+    "disadvantages": [
+      "No new features"
+    ],
+    "image": "https://gloimg.gbtcdn.com/gb/pdm-product-pic/Electronic/2017/08/28/goods-img/1503856982981923822.jpg"
+  }
 ]

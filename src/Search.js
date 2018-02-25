@@ -1,91 +1,120 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import './App.css';
 import _ from 'lodash'
 import ProgressBar from './ProgressBar'
-import { Header, List, Search, Progress,Image} from 'semantic-ui-react'
+import {Header, List, Search, Image} from 'semantic-ui-react'
+
 const source = require('./assets/data/data.json');
 
-export default class SearchBar extends Component{
+export default class SearchBar extends Component {
 
-  componentWillMount() {
-     this.resetComponent()
-   }
+    constructor(props) {
+        super(props)
 
-   resetComponent = () => this.setState({ isLoading: false, results: [], value: '' })
+        this.state = {
+            isLoading: false,
+            results: [],
+            value: '',
+            selectedItem: undefined
+        }
+    }
 
-   handleResultSelect = (e, { result }) => this.setState({ name: result.name,src:result.image,s:result.stats, battery:result.stats.battery, weight:result.stats.weight
-     ,adv:result.advantages
-    })
+    componentWillMount() {
+        this.resetComponent()
+    }
 
-handleSearchChange = (e, { value }) => {
-  this.setState({ isLoading: true, value })
+    resetComponent = () => this.setState({isLoading: false, results: [], value: ''})
 
-  setTimeout(() => {
-    if (this.state.value.length < 1) return this.resetComponent()
+    handleResultSelect = (e, {result}) => { this.setState({selectedItem: result.item}) }
 
-    const val = (this.state.value).replace(/\s+/g, '') // ignore whitespace
-    const re = new RegExp(val, 'i')
-    const isMatch = result => re.test((result.name).replace(/\s+/g, ''))
+    handleSearchChange = (e, {value}) => {
+        this.setState({isLoading: true, value})
 
-    this.setState({
-      isLoading: false,
-      results: _.filter(source, isMatch),
-    })
-  }, 500)
-}
+        setTimeout(() => {
+            if (this.state.value.length < 1) return this.resetComponent()
 
-resultRenderer = ({ name,make,stats}) => {
-    return <div className="result">{name}</div>
-  }
+            const val = (this.state.value).replace(/\s+/g, '') // ignore whitespace
+            const re = new RegExp(val, 'i')
+            const isMatch = result => re.test((result.name).replace(/\s+/g, ''))
 
-  render(){
-     const { isLoading, value, results } = this.state
-    return(
-      <div className="container">
-        <div className="searchBar">
+            this.setState({
+                isLoading: false,
+                results: _.filter(source, isMatch),
+            })
+        }, 500)
+    };
 
-                <Search input={{ fluid: true }} className="search"
-                  loading={isLoading}
-                  resultRenderer={this.resultRenderer}
-                  onResultSelect={this.handleResultSelect}
-                  onSearchChange={this.handleSearchChange}
-                  results={results}
-                  value={value}
-                  {...this.props}
-                  placeholder="Find phone..."
-                  fluid
-                />
+    getSelectedItemStats() {
+        if (!this.state.selectedItem)
+            return [];
+        else
+            return _.map(this.state.selectedItem.stats, (value, key) => ({ name: key, value: value }))
+    }
 
-        </div>
-        <div className="gridDetails">
-          <div className="detailsContainer">
-            <div className="details" align="center">
-              {this.state.name}
-              <Image src={this.state.src} size='medium' />
+    render() {
+        const {isLoading, value, results} = this.state;
+        return (
+            <div className="container">
+
+                {/* SEARCH BAR */}
+                <div className="searchBar">
+                    <Search className="search"
+                            input={{fluid: true}}
+                            loading={isLoading}
+                            onResultSelect={this.handleResultSelect}
+                            onSearchChange={this.handleSearchChange}
+                            results={results.map(x => ({
+                                title: x.name,
+                                image: x.image,
+                                item: x
+                            }))}
+                            value={value}
+                            {...this.props}
+                            placeholder="Find phone..."
+                            fluid
+                    />
+                </div>
+
+                {/* INFO */}
+                <div className="gridDetails">
+                    <div className="detailsContainer">
+
+                        {/* IMAGE */}
+                        <div className="details" align="center">
+                            {_.get(this.state,'selectedItem.name',"")}
+                            <Image src={_.get(this.state,"selectedItem.image","")} size='medium'/>
+                        </div>
+
+                        {/* PROGRESS BARS */}
+                        <div className="spec">
+                            {this.getSelectedItemStats().map(x => (
+                                <ProgressBar
+                                    key={x.name}
+                                    value={x.value}/>
+                            ))}
+                        </div>
+
+                        {/* ADVANTAGES/DISADVANTAGES */}
+                        <div className="details">
+                            <Header as='h1'>Advantage</Header>
+                            <List bulleted>
+                                <List.Item>{this.state.adv}</List.Item>
+                                <List.Item>Inviting Friends</List.Item>
+                                <List.Item>asdasdf</List.Item>
+                            </List>
+                            <Header as='h1'>Disadvantage</Header>
+                            <List bulleted>
+                                <List.Item>Gaining Access</List.Item>
+                                <List.Item>Inviting Friends</List.Item>
+                                <List.Item>adsfasdf</List.Item>
+                            </List>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div className="spec">
-                <ProgressBar value={this.state.s}/>
-            </div>
-            <div className="details">
-              <Header as='h1'>Advantage</Header>
-                <List bulleted>
-                  <List.Item>{this.state.adv}</List.Item>
-                  <List.Item>Inviting Friends</List.Item>
-                  <List.Item>asdasdf</List.Item>
-                </List>
-              <Header as='h1'>Disadvantage</Header>
-                <List bulleted>
-                  <List.Item>Gaining Access</List.Item>
-                  <List.Item>Inviting Friends</List.Item>
-                  <List.Item>adsfasdf</List.Item>
-                </List>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    )
-  }
+        )
+    }
 }
 
 /*
