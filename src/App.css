@@ -1,18 +1,68 @@
 .App {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  height:90%;
+  display: flex;
+  flex-flow: column; /*centers items on the line (the x-axis by default)*/
+padding: 0;margin: 0;
+}
+
+.searchBar{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.result{
+  width:100%;
+  color:black;
+  font-size: 10px;
+}
+.results{
+    overflow:auto;
+    max-height: 80vh;
+}
+
+.gridDetails {
+    position: relative;
+    height: 100%;
+  height: inherit;
+}
+.detailsContainer {
+  position: relative;
+  top:0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.spec {
   height:100%;
   width:100%;
-   position: absolute;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;flex: 1;border: 1px solid black;
 }
-.container{
-  position: absolute;
-  top:20%;
-  left:10%;
+.details {
+  width: 33.333%;
+  padding: 10px;
 }
+
 
 .description {
-  border:1px solid black;
-
+  border: 1px solid black;
 }
-input:focus{
-  border:2px solid teal !important;
+input:focus {
+  border: 2px solid teal !important;
 }
