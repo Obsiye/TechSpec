@@ -8,6 +8,7 @@ export default class ProgressBar extends Component {
     render() {
         return (
             <div>
+            {this.props.name}
                 <Progress indicating value={this.props.value} total='10' progress='ratio'/>
             </div>
         )
@@ -16,5 +17,6 @@ export default class ProgressBar extends Component {
 }
 
 ProgressBar.propTypes = {
-    value: PropTypes.number.isRequired
+    value: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired
 };

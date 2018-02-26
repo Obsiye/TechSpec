@@ -3,11 +3,15 @@
     "name": "Nexus 6P",
     "make": "Make of phone",
     "stats": {
-      "battery": 9,
-      "weight": 4
+      "Battery": 9,
+      "Weight": 4,
+      "Longevity": 1,
+      "Design": 8,
+      "Price": 8
     },
     "advantages": [
-      "High quality for relatively low price"
+      "High quality for relatively low price",
+      "low quality"
     ],
     "disadvantages": [
       "Battery significantly worse after 2 years"
@@ -18,113 +22,12 @@
     "name": "Samsung S8",
     "make": "Samsung",
     "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
-    },
-    "advantages": [
-      "The best"
-    ],
-    "disadvantages": [
-      "It's really expensive"
-    ],
-    "image": "http://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s8/configurator/galaxys8plus_black_all.png?$ORIGIN_PNG$"
-  },
-  {
-    "name": "Samsung S8",
-    "make": "Samsung",
-    "stats": {
-      "battery": 8,
-      "weight": 5
+      "Battery": 8,
+      "Weight": 5,
+      "Longevity": 1,
+      "Design": 8,
+      "Price": 8,
+      "Popularity": 2
     },
     "advantages": [
       "The best"
@@ -138,14 +41,41 @@
     "name": "One Plus 5",
     "make": "One Plus",
     "stats": {
-      "battery": 8,
-      "weight": 5
+      "Battery": 8,
+      "Weight": 5,
+      "Longevity": 1,
+      "Design": 8,
+      "Price": 8,
+      "Popularity": 2,
+      "Memory": 8,
+      "Storage": 9
     },
     "advantages": [
       "Affordable quality"
     ],
     "disadvantages": [
       "No new features"
+    ],
+    "image": "https://gloimg.gbtcdn.com/gb/pdm-product-pic/Electronic/2017/08/28/goods-img/1503856982981923822.jpg"
+  },
+  {
+    "name": "Samsung S7",
+    "make": "Samsung Galaxy",
+    "stats": {
+      "Battery": 8,
+      "Weight": 5,
+      "Longevity": 1,
+      "Design": 8,
+      "Price": 8,
+      "Popularity": 2,
+      "Memory": 8,
+      "Storage": 9
+    },
+    "advantages": [
+      "The okish"
+    ],
+    "disadvantages": [
+      "It's really expensive"
     ],
     "image": "https://gloimg.gbtcdn.com/gb/pdm-product-pic/Electronic/2017/08/28/goods-img/1503856982981923822.jpg"
   }
